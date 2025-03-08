@@ -1,0 +1,32 @@
+<mat-sidenav-container class="container">
+  
+  <!-- Menu Lateral -->
+  <mat-sidenav class="sidemenu" #sidenav mode="side" opened="false">
+    <mat-nav-list>
+      <a mat-list-item (click)="redirectToPath('/home')">Home</a>
+      <a mat-list-item (click)="redirectToPath('/home/dev')">Desenvolvedores</a>
+      <a mat-list-item (click)="redirectToPath('/home/account')">Configurações</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <div></div>
+
+  <!-- Conteúdo principal -->
+
+  <mat-sidenav-content>
+
+    <header>
+      <app-tool-bar [sidenav]="sidenav"></app-tool-bar>
+    </header>
+
+    <main class="centro">
+      <router-outlet></router-outlet>
+    </main>
+
+    <footer>
+      <p>Distribuido por Toasty Tech LTDA</p>
+    </footer>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

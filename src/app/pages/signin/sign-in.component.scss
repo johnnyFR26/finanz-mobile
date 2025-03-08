@@ -1,0 +1,11 @@
+.divisao{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+}
+.divisao div{
+    display: grid;
+    gap: 5px;
+}
+

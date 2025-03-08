@@ -1,0 +1,7 @@
+{
+  "name": "finanz-mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
