@@ -21,3 +21,15 @@ describe('LogInComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+fdescribe('Função soma', () => {
+  it('Somar 2 numeros', () => {
+  expect(soma(3, 5)).toBe(8);
+  });
+
+function soma (a: number,b: number): number {
+  const soma = a + b;
+  return soma;
+  
+}
+});
